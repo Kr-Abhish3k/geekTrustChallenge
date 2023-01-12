@@ -1,0 +1,17 @@
+.productCardWrapper {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 1.5rem;;
+  }
+
+  .productImage {
+    padding : 2rem;
+  }
+
+  .searchForm {
+    width: 20rem;
+  }
+
+  .searchFormWrapper {
+    padding: 1rem 0;
+  }
+  

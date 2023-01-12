@@ -1,0 +1,15 @@
+.checkboxWrapper input {
+    margin-right: 5px;
+}
+
+.filterLabel {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.sidebarWrapper {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1rem;
+    position: fixed;
+    width: 20%;
+}
