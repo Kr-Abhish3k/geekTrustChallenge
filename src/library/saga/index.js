@@ -1,13 +1,13 @@
 import { FETCH_DATA } from 'library/store/actionTypes';
-import { call, takeLatest } from 'redux-saga/effects';
+import { call, put, takeLatest } from 'redux-saga/effects';
 import serviceRequest from 'library/store/servicerequest';
+import { storeData } from 'library/store/actions';
 
 function* fetchUser() {
 	try {
 		console.log('fetchUser saga call start');
 		const response = yield call(serviceRequest);
-		console.log('fetchUser saga call end');
-		console.log(response);
+		yield put(storeData(response));
 	} catch (error) {
 		console.log('Error in fetch request', error);
 	}
